@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CryptoExchange</string>
+    <string name="btc_exchange">BTC EXCHANGE</string>
+    <string name="eth_exchange">ETH EXCHANGE</string>
+    <string name="hint_convertAmount">Enter Amount to Convert</string>
+</resources>

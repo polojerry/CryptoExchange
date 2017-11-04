@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#75b1c7"
+    tools:context="com.polotechnologies.cryptoexchange.Calculation">
+
+    <EditText
+        android:id="@+id/convertAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/hint_convertAmount"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/btcLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="BTC Value"
+        android:layout_below="@+id/convertAmount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="12dp"/>
+
+    <TextView
+        android:id="@+id/ethLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="ETH Value"
+        android:layout_alignBaseline="@+id/btcLabel"
+        android:layout_alignBottom="@+id/btcLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/btcValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:text="100000000"
+        android:layout_below="@+id/btcLabel" />
+
+    <TextView
+        android:id="@+id/ethValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ethLabel"
+        android:layout_alignStart="@+id/ethLabel"
+        android:layout_alignBaseline="@+id/btcValue"
+        android:layout_alignBottom="@+id/btcValue"
+        android:textSize="20sp"
+        android:text="100000000" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONVERT"
+        android:layout_below="@+id/ethValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/btcConvertedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convertButton"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Your BTC Amount" />
+
+    <TextView
+        android:id="@+id/ethConvertedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Your ETH Amount"
+        android:layout_alignBaseline="@+id/btcConvertedLabel"
+        android:layout_alignBottom="@+id/btcConvertedLabel"
+        android:layout_alignRight="@+id/ethLabel"
+        android:layout_alignEnd="@+id/ethLabel" />
+
+    <TextView
+        android:id="@+id/btcConvertedAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:text="100000000"
+        android:layout_below="@+id/btcConvertedLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="100000000"
+        android:layout_alignBaseline="@+id/btcConvertedAmount"
+        android:layout_alignBottom="@+id/btcConvertedAmount"
+        android:layout_alignRight="@+id/ethValue"
+        android:layout_alignEnd="@+id/ethValue"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+
+</RelativeLayout>
