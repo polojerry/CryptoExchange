@@ -50,7 +50,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
                 .load(priceItem.getImageCurrencyLoad())
                 .into(holder.imageView);
 
-        /*holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
+        holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context,Calculation.class);
@@ -59,7 +59,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
                 context.startActivity(intent);
             }
         });
-        */
 
     }
 
@@ -82,14 +81,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             ethPrice=(TextView)itemView.findViewById(R.id.ethPrice);
             imageView= (ImageView)itemView.findViewById(R.id.imageCurrency);
             relativeLayout=(RelativeLayout) itemView.findViewById(R.id.relativeLayout);
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(itemView.getContext(),Calculation.class);
-                    itemView.getContext().startActivity(intent);
-                }
-            });
 
         }
     }
